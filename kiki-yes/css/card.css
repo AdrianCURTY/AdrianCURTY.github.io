@@ -1,0 +1,142 @@
+.red{
+    border: 3px solid red;
+}
+#player-board .card:nth-child(5n){
+    animation: bounce-top 1.2s linear 0.2s infinite alternate-reverse none;
+}
+#player-board .card:nth-child(5n+1){
+    animation: bounce-top 1.2s linear 0.1s infinite alternate-reverse none;
+}
+#player-board .card:nth-child(5n+2){
+    animation: bounce-top 1.2s linear 0.5s infinite alternate-reverse none;
+}
+#player-board .card:nth-child(5n+3){
+    animation: bounce-top 1.2s linear 0.3s infinite alternate-reverse none;
+}
+#player-board .card:nth-child(5n+4){
+    animation: bounce-top 1.2s linear 0.7s infinite alternate-reverse none;
+}
+#player-board .card:hover{
+    animation: 0;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    z-index: 999;
+}
+#player-board{
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    background: rgb(215 193 127);
+    margin-left: 35%;
+    margin-top: 6%;
+}
+.line{
+    display: flex;
+}
+.card{
+    border:2px black solid;
+    height: 180px;
+    width: 120px;
+    
+    margin: 0.15%;
+    border-radius: 5%;
+    background-size: cover;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.name-tag{
+    left: 25%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    top: 2%;
+    width: fit-content;
+    background-color: rgba(0,0,0,0.75);
+}
+#tanguy{
+    background-image: url("../img/tanguy.jpg");
+}
+#arthur{
+    background-image: url("../img/arthur.jpg");
+}
+#sarah{
+    background-image: url("../img/sarah.jpg");
+}
+#adrian{
+    background-image: url("../img/adrian.jpg");
+}
+#benoit{
+    background-image: url("../img/benoit.jpg");
+}
+#arthur{
+    background-image: url("../img/arthur.jpg");
+}
+#florian{
+    background-image: url("../img/florian.jpg");
+}
+#loic{
+    background-image: url("../img/loic.jpg");
+}
+#fred{
+    background-image: url("../img/fred.jpg");
+}
+#robin{
+    background-image: url("../img/robin.jpg");
+}
+#jean-luc{
+    background-image: url("../img/jean-luc.jpg");
+}
+#martin{
+    background-image: url("../img/martin.jpg");
+}
+#antho{
+    background-image: url("../img/antho.jpg");
+}
+#adrien{
+    background-image: url("../img/adrien.jpg");
+}
+
+
+
+
+#tanguy{
+    background-image: url("../img/tanguy.jpg");
+}
+#arthur{
+    background-image: url("../img/arthur.jpg")
+}
+#sarah{
+    background-image: url("../img/sarah.jpg")
+}
+#florian{
+    background-image: url("../img/florian.jpg")
+}
+#benoit{
+    background-image: url("../img/benoit.jpg")
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+    /* 80% {
+		transform: scale(1.28);
+	} */
+	100% {
+		transform: scale(2);
+	}
+}
+@keyframes bounce-top {
+			
+    0% {
+        transform:translateY(0);
+    }
+   
+    100% {
+        transform:translateY(5px);
+    }
+}
